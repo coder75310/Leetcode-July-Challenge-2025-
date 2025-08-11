@@ -9,7 +9,7 @@ Return the total number of possible original strings that Alice might have inten
 class Solution {
 public:
     int possibleStringCount(string word) {
-        int total = 1; // keep word as is
+        int total = 1; 
         int n = word.size();
         int i = 0;
         
