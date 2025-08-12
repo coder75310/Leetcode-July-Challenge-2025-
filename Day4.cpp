@@ -11,7 +11,7 @@ Note that the character 'z' can be changed to 'a' in the second type of operatio
 
 
 class Solution {
-public:     // publicccc
+public:     // public
     char kthCharacter(long long k, vector<int>& operations) {
         vector<int> trimmedOps;
         long long curr_len = 1;
