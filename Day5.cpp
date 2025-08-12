@@ -5,7 +5,7 @@ Return the largest lucky integer in the array. If there is no lucky integer retu
 
 
 class Solution {
-public: //
+public: 
     int findLucky(vector<int>& arr) {
         unordered_map<int, int> freq;
 
