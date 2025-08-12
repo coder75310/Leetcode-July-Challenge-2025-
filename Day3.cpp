@@ -8,7 +8,7 @@ Return the value of the kth character in word, after enough operations have been
 
 
 class Solution {
-public:
+public:  //////
     char kthCharacter(int k) {
         int step = 0;
         int length = 1;
