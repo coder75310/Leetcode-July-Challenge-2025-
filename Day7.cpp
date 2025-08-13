@@ -7,7 +7,7 @@ Return the maximum number of events you can attend.
 
 
 class Solution {
-public: ///////////
+public: 
     int maxEvents(vector<vector<int>>& events) {
         sort(events.begin(), events.end());
         
