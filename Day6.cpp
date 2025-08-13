@@ -12,7 +12,7 @@ int count(int tot) Returns the number of pairs (i, j) such that nums1[i] + nums2
 
 
 class FindSumPairs {
-public:
+public: ////////
     vector<int> nums1, nums2;
     unordered_map<int, int> freq2;
 
