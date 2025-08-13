@@ -8,7 +8,7 @@ Return the maximum sum of values that you can receive by attending events. */
 
 
 class Solution {
-public: ///////////
+public: 
     int maxValue(vector<vector<int>>& events, int k) {
         int n = events.size();
         // Sort by end day
