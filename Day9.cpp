@@ -41,6 +41,5 @@ public:
         }
 
         return maxSum;
-
     }
 };
