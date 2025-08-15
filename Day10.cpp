@@ -52,7 +52,5 @@ public:
         }
 
         return result;
-
-
     }
 };
