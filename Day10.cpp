@@ -37,7 +37,6 @@ public:
             maxLeftFree[i] = max(maxLeftFree[i-1], freeArray[i-1]);
         }
 
-
         int result = 0;
         //Iterating on the freeArray
         for(int i = 1; i < n; i++) {
