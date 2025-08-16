@@ -62,7 +62,7 @@ public:
         int maxRoom = 0;
         for (int i = 1; i < n; ++i) {
             if (roomUsage[i] > roomUsage[maxRoom])
-                maxRoom = i;
+                // maxRoom = i;
         }
         
         return maxRoom;
