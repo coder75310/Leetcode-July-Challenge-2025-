@@ -64,6 +64,7 @@ public:
             if (roomUsage[i] > roomUsage[maxRoom])
                 maxRoom = i;
         }
+        
         return maxRoom;
     }
 };
