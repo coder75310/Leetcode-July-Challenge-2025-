@@ -18,3 +18,70 @@ this round.
 
 Given the integers n, firstPlayer, and secondPlayer, return an integer array containing two values, the earliest possible round number and
 the latest possible round number in which these two players will compete against each other, respectively. */
+
+
+class Solution {
+public:
+        map<tuple<int, int, int>, pair<int, int>> memo;
+
+    pair<int, int> dfs(int n, int a, int b) {
+        if (a > b) swap(a, b);
+        auto key = make_tuple(n, a, b);
+        if (memo.count(key)) return memo[key];
+
+        int l = a, r = b;
+        if (l + r == n + 1) return {1, 1}; // They face each other this round
+
+        int minRound = INT_MAX, maxRound = INT_MIN;
+        vector<pair<int, int>> pairs;
+        for (int i = 1; i <= n / 2; ++i)
+            pairs.push_back({i, n - i + 1});
+        if (n % 2 == 1) pairs.push_back({(n + 1) / 2, (n + 1) / 2});
+
+        vector<int> current;
+        for (int mask = 0; mask < (1 << pairs.size()); ++mask) {
+            current.clear();
+            bool valid = true;
+            for (int i = 0; i < pairs.size(); ++i) {
+                int x = pairs[i].first, y = pairs[i].second;
+                if (x == y) {
+                    current.push_back(x);
+                    continue;
+                }
+
+                bool containsA = (x == a || y == a);
+                bool containsB = (x == b || y == b);
+
+                if (containsA && containsB) {
+                    valid = false;
+                    break;
+                }
+                if (containsA) {
+                    current.push_back(a);
+                } else if (containsB) {
+                    current.push_back(b);
+                } else {
+                    current.push_back((mask >> i) & 1 ? x : y);
+                }
+            }
+
+            if (!valid) continue;
+            sort(current.begin(), current.end());
+
+            // new positions of a and b
+            int posA = find(current.begin(), current.end(), a) - current.begin() + 1;
+            int posB = find(current.begin(), current.end(), b) - current.begin() + 1;
+
+            auto [nextMin, nextMax] = dfs(current.size(), posA, posB);
+            minRound = min(minRound, nextMin + 1);
+            maxRound = max(maxRound, nextMax + 1);
+        }
+
+        return memo[key] = {minRound, maxRound};
+    }
+
+    vector<int> earliestAndLatest(int n, int firstPlayer, int secondPlayer) {
+        auto [minR, maxR] = dfs(n, firstPlayer, secondPlayer);
+        return {minR, maxR};
+    }
+};
