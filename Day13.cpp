@@ -6,3 +6,26 @@ The ith player can match with the jth trainer if the player's ability is less th
 the ith player can be matched with at most one trainer, and the jth trainer can be matched with at most one player.
 
 Return the maximum number of matchings between players and trainers that satisfy these conditions. */
+
+
+class Solution {
+public:
+    int matchPlayersAndTrainers(vector<int>& players, vector<int>& trainers) {
+        sort(players.begin(), players.end());
+        sort(trainers.begin(), trainers.end());
+
+        int i = 0, j = 0, count = 0;
+        while (i < players.size() && j < trainers.size()) {
+            if (players[i] <= trainers[j]) {
+                // match found
+                count++;
+                i++;
+                j++;
+            } else {
+                // try next stronger trainer
+                j++;
+            }
+        }
+        return count;
+    }
+};
