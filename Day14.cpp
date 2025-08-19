@@ -17,7 +17,6 @@ The most significant bit is at the head of the linked list. */
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-
 class Solution {
 public:
     int getDecimalValue(ListNode* head) {
