@@ -11,7 +11,8 @@ Return true if word is valid, otherwise, return false. */
 
 
 class Solution {
-public:
+public: 
+// Your code is here
     bool isValid(string word) {
         if (word.size() < 3) return false;
 
