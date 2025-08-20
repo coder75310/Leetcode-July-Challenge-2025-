@@ -12,7 +12,7 @@ Return true if word is valid, otherwise, return false. */
 
 class Solution {
 public: 
-    // Your
+    // 
     bool isValid(string word) {
         if (word.size() < 3) return false;
 
