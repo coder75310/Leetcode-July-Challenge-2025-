@@ -10,7 +10,6 @@ A subsequence is an array that can be derived from another array by deleting som
 
 class Solution {
 public:
-    //
     int maximumLength(vector<int>& nums) {
         int countEven = 0, countOdd = 0;
         for (int num : nums) {
