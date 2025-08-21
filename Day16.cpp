@@ -6,3 +6,29 @@ A subsequence sub of nums with length x is called valid if it satisfies:
 Return the length of the longest valid subsequence of nums.
 
 A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements. */
+
+
+class Solution {
+public:
+    int maximumLength(vector<int>& nums) {
+        int countEven = 0, countOdd = 0;
+        for (int num : nums) {
+            if (num % 2 == 0) countEven++;
+            else countOdd++;
+        }
+
+        // Try building alternating parity subsequence
+        int altLen = 1; // At least one number
+        int prevParity = nums[0] % 2;
+
+        for (int i = 1; i < nums.size(); ++i) {
+            int currParity = nums[i] % 2;
+            if (currParity != prevParity) {
+                altLen++;
+                prevParity = currParity;
+            }
+        }
+
+        return max({countEven, countOdd, altLen});
+    }
+};
