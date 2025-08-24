@@ -1,7 +1,8 @@
 2163. Minimum Difference in Sums After Removal of Elements:
 You are given a 0-indexed integer array nums consisting of 3 * n elements.
 
-You are allowed to remove any subsequence of elements of size exactly n from nums. The remaining 2 * n elements will be divided into two equal parts:
+You are allowed to remove any subsequence of elements of size exactly n from nums. The remaining 2 * n elements will be divided into two
+equal parts:
 
 The first n elements belonging to the first part and their sum is sumfirst.
 The next n elements belonging to the second part and their sum is sumsecond.
