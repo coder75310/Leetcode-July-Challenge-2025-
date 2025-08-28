@@ -6,7 +6,7 @@ Return the maximum score you can get by erasing exactly one subarray.
 An array b is called to be a subarray of a if it forms a contiguous subsequence of a, that is, if it is equal to a[l],a[l+1],...,a[r] for some (l,r). */
 
 
-// Method: 1
+// Method: 1   /// 
 /* class Solution {
 public:
     int maximumUniqueSubarray(vector<int>& nums) {
