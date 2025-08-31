@@ -27,7 +27,7 @@ public:
         //Second Pass
         string temp_second = removeSubstring(temp_first, minStr);
         removedPairsCount  = (L - temp_second.length()) / 2;
-        score             += removedPairsCount * min(x, y);
+        score += removedPairsCount * min(x, y);
 
         return score;
     }
