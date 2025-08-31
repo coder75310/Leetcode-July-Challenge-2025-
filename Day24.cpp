@@ -11,7 +11,7 @@ Return the maximum points you can gain after applying the above operations on s.
 class Solution {
 public:
     int maximumGain(string s, int x, int y) {
-        int n     = s.length();
+        int n = s.length();
         int score = 0;
 
         string maxStr = (x > y) ? "ab" : "ba";
