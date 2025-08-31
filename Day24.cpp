@@ -1,1 +1,2 @@
-1717. Maximum Score From Removing Substrings
+1717. Maximum Score From Removing Substrings:
+
