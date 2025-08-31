@@ -18,7 +18,7 @@ public:
         string minStr = (maxStr == "ab") ? "ba" : "ab"; //This is updated after the video was made as a new test case was added in Leetcode
 
         //First Pass
-        string temp_first     = removeSubstring(s, maxStr);
+        string temp_first = removeSubstring(s, maxStr);
         int L = temp_first.length();
         int removedPairsCount = (n - L) / 2;
         score                += removedPairsCount * max(x, y);
