@@ -21,7 +21,7 @@ public:
         string temp_first = removeSubstring(s, maxStr);
         int L = temp_first.length();
         int removedPairsCount = (n - L) / 2;
-        score                += removedPairsCount * max(x, y);
+        score += removedPairsCount * max(x, y);
 
 
         //Second Pass
