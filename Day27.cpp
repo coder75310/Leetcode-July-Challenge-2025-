@@ -1,4 +1,4 @@
-2210. Count Hills and Valleys in an Array
+2210. Count Hills and Valleys in an Array:
 You are given a 0-indexed integer array nums. An index i is part of a hill in nums if the closest non-equal neighbors of i are smaller than nums[i]. Similarly,
 an index i is part of a valley in nums if the closest non-equal neighbors of i are larger than nums[i]. Adjacent indices i and j are part of the same hill or valley if nums[i] == nums[j].
 
