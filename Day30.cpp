@@ -13,7 +13,7 @@ A subarray is a contiguous sequence of elements within an array. */
 
 
 /* class Solution {
-public:    ///
+public:    
     int longestSubarray(vector<int>& nums) {
         int maxVal = 0, ans = 0, currentStreak = 0;
 
