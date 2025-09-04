@@ -11,28 +11,28 @@ The bitwise AND of an array is the bitwise AND of all the numbers in it.
 A subarray is a contiguous sequence of elements within an array. */
 
 
-// class Solution {
-// public:
-//     int longestSubarray(vector<int>& nums) {
-//         int maxVal = 0, ans = 0, currentStreak = 0;
+/* class Solution {
+public:
+    int longestSubarray(vector<int>& nums) {
+        int maxVal = 0, ans = 0, currentStreak = 0;
 
-//         for (int num : nums) {
-//             if (maxVal < num) {
-//                 maxVal = num;
-//                 ans = currentStreak = 0;
-//             }
+        for (int num : nums) {
+            if (maxVal < num) {
+                maxVal = num;
+                ans = currentStreak = 0;
+            }
 
-//             if (maxVal == num) {
-//                 currentStreak++;
-//             } else {
-//                 currentStreak = 0;
-//             }
+            if (maxVal == num) {
+                currentStreak++;
+            } else {
+                currentStreak = 0;
+            }
 
-//             ans = max(ans, currentStreak);
-//         }
-//         return ans;
-//     }
-// };
+            ans = max(ans, currentStreak);
+        }
+        return ans;
+    }
+}; */
 
 
 
