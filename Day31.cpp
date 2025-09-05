@@ -34,3 +34,6 @@ public:
         return result.size();
     }
 };
+
+
+Method : 2
