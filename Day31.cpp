@@ -36,8 +36,8 @@ public:
 };
 
 
-/* Method : 2
-class Solution {
+// Method : 2
+/* class Solution {
 public:
     int subarrayBitwiseORs(vector<int>& arr) {
         unordered_set<int> result;
