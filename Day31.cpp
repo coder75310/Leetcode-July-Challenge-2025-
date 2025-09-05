@@ -36,7 +36,7 @@ public:
 };
 
 
-Method : 2
+/* Method : 2
 class Solution {
 public:
     int subarrayBitwiseORs(vector<int>& arr) {
@@ -55,4 +55,4 @@ public:
 
         return result.size();
     }
-};
+}; */
