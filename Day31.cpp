@@ -8,3 +8,6 @@ A subarray is a contiguous non-empty sequence of elements within an array.Given 
 The bitwise OR of a subarray is the bitwise OR of each integer in the subarray. The bitwise OR of a subarray of one integer is that integer.
 
 A subarray is a contiguous non-empty sequence of elements within an array. */
+
+
+// Method : 1
