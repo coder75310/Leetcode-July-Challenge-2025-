@@ -59,7 +59,7 @@ public:
 
 
 // Method : 3
-class Solution {
+/* class Solution {
 public:
     int subarrayBitwiseORs(vector<int>& arr) {
         unordered_set<int> result, current;
@@ -77,3 +77,4 @@ public:
         return result.size();
     }
 };
+ */
